@@ -1,0 +1,7 @@
+[functions]
+  external_node_modules = ["node-fetch"] # Указывает Netlify, что эти модули нужны для функций
+  node_bundler = "zip-it-and-ship-it" # Используем стандартный бандлер Netlify
+
+# Это для автоматической установки зависимостей функций, если у вас их много
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
